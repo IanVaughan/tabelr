@@ -52,6 +52,7 @@ module Tabelr
         output.printf "|\n"
       end
       output.printf divider
+      output.flush
     end
 
     def max a, b
