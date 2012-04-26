@@ -46,6 +46,8 @@ E.g. (extract from `test/example.json`)
 output
 ------
 
+The output filename can be omitted, it will then default to the STDOUT terminal
+
 Given the file input above, the output will look like :-
 
     +---------+----------------------+---------+------------------+
