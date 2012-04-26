@@ -22,12 +22,16 @@ module Tabelr
     end
 
     def parse json
+      json.each_value { |h| parse_hash h }
+    end
+
+    def parse_hash hash
       # header
-      json['data'].first.each_key { |key| stash key }
+      hash.first.each_key { |key| stash key }
       bank
 
       # content/row
-      json['data'].each do |line|
+      hash.each do |line|
         line.each_value { |value| stash value }
         bank
       end
