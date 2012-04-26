@@ -1,4 +1,4 @@
-Tabler
+Tabelr
 ======
 
 Creates neat aligned ascii tables from a json input
