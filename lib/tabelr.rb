@@ -1,5 +1,5 @@
 require 'json'
-require './lib/tabelr/table_formater'
+require_relative './lib/tabelr/table_formater'
 
 module Tabelr
   class << self

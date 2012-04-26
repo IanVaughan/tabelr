@@ -1,8 +1,8 @@
 Gem::Specification.new do |s|
   s.name          = "tabelr"
   s.summary       = "Creates neat aligned ascii tables from a json input"
-  s.description   = "See the README!"
-  s.version       = "0.0.2"
+  s.description   = "Creates neat aligned ascii tables from a json input"
+  s.version       = "0.0.3"
   s.author        = "Ian Vaughan"
   s.email         = "tabelr@ianvaughan.co.uk"
   s.platform      = Gem::Platform::RUBY
