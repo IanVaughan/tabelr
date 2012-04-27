@@ -6,7 +6,7 @@ module Tabelr
 
     def run
       args = parse_args
-      return unless valid args
+      return unless valid? args
 
       @tf = TableFormator.new
 
@@ -25,7 +25,7 @@ module Tabelr
       commands
     end
 
-    def valid args
+    def valid? args
       if args[0].nil?
         puts "Man, you gotta give me a file to read from!"
         return
