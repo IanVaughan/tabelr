@@ -26,7 +26,7 @@ module Tabelr
     end
 
     def valid? args
-      if args[0].nil?
+      if args.nil? or args[0].nil?
         puts "Man, you gotta give me a file to read from!"
         return
       end
