@@ -11,9 +11,7 @@ module Tabelr
       @tf = TableFormator.new
 
       json = JSON.parse(File.read(args[0]))
-      output = STDOUT
-      output = File.open(args[1], 'w') unless args[1].nil?
-
+      output = $stdout
       @tf.go json, output
     end
 
