@@ -47,16 +47,15 @@ module Tabelr
     end
 
     def dump output
-      output.printf divider
+      output << divider
       @lines.each_with_index do |line, index|
-        output.printf divider if index == 1
+        output << divider if index == 1
         line.each_with_index do |item, i|
-          output.printf format item.to_s, @max_len[i]
+          output << format(item.to_s, @max_len[i])
         end
-        output.printf "|\n"
+        output << "|\n"
       end
-      output.printf divider
-      output.flush
+      output << divider
     end
 
     def max a, b
