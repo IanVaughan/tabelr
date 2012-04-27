@@ -23,7 +23,7 @@
       "column1": "other",
       "column2": "eg",
       "column3": null,
-      "column4": 3322119999999999
+      "column4": 33221199999999991111211111111111
     }
   ],
   "doesnt matter":
@@ -47,7 +47,7 @@
       "column4": "in"
     },
     {
-      "column1": "other",
+      "column1": "other---------------------",
       "column2": "eg",
       "column3": null,
       "column4": 3322119999999999

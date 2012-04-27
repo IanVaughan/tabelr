@@ -1,13 +1,12 @@
-+---------+----------------------+---------+------------------+
-| column1 | column2              | column3 | column4          |
-+---------+----------------------+---------+------------------+
-| This    | is                   | quite   | cool!            |
-| This    | is the longest field | by far  | 1241             |
-| Short   | fields               | fit     | in               |
-| other   | eg                   |         | 3322119999999999 |
-| column1 | column2              | column3 | column4          |
-| This    | is                   | quite   | cool!            |
-| This    | is the longest field | by far  | 1241             |
-| Short   | fields               | fit     | in               |
-| other   | eg                   |         | 3322119999999999 |
-+---------+----------------------+---------+------------------+
++----------------------------+----------------------+---------+----------------------------------+
+| column1                    | column2              | column3 | column4                          |
++----------------------------+----------------------+---------+----------------------------------+
+| This                       | is                   | quite   | cool!                            |
+| This                       | is the longest field | by far  | 1241                             |
+| Short                      | fields               | fit     | in                               |
+| other                      | eg                   |         | 33221199999999991111211111111111 |
+| This                       | is                   | quite   | cool!                            |
+| This                       | is the longest field | by far  | 1241                             |
+| Short                      | fields               | fit     | in                               |
+| other--------------------- | eg                   |         | 3322119999999999                 |
++----------------------------+----------------------+---------+----------------------------------+
