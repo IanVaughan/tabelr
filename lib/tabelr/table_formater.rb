@@ -7,6 +7,8 @@ module Tabelr
     end
 
     def go json, output
+      raise 'aw' if output.respond_to? :Append
+
       parse json
       analyse
       dump output
