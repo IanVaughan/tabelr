@@ -1,9 +1,9 @@
 Tabelr
 ======
 
-Creates neat aligned ascii tables from a json input
+Creates neat aligned ascii tables from a json input.
 
-This is mainly useful on SQU query output from Sequel Pro app, which can save results as json.
+This is mainly useful on SQL query output from Sequel Pro app, which can save results as json.
 
 I'm sure there are a 100+ versions of this around, but I wrote this mainly for the challenge.
 
@@ -11,10 +11,22 @@ I'm sure there are a 100+ versions of this around, but I wrote this mainly for t
 Usage
 -----
 
-  ruby bin/tabelr test/example.json test/output.txt
+Command line :-
+
+    ruby bin/tabelr test/example.json test/output.txt
 
 
-input
+Code :
+
+    require 'tabelr'
+
+    data = {}
+
+    res = Tabelr::convert data
+
+
+
+Input
 -----
 
 - The input must be a json formatted file
@@ -43,7 +55,7 @@ E.g. (extract from `test/example.json`)
           "column4": 1241
         },
 
-output
+Output
 ------
 
 The output filename can be omitted, it will then default to the STDOUT terminal

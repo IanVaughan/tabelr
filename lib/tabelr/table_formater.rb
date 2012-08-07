@@ -6,12 +6,10 @@ module Tabelr
       @line = []
     end
 
-    def go json, output
-      raise 'aw' if output.respond_to? :Append
-
+    def convert json
       parse json
       analyse
-      dump output
+      dump
     end
 
     def stash data
@@ -24,13 +22,16 @@ module Tabelr
     end
 
     def parse json
+      @header = true
       json.each_value { |h| parse_hash h }
     end
 
     def parse_hash hash
-      # header
-      hash.first.each_key { |key| stash key }
-      bank
+      if @header
+        hash.first.each_key { |key| stash key }
+        bank
+        @header = false
+      end
 
       # content/row
       hash.each do |line|
@@ -48,7 +49,8 @@ module Tabelr
       end
     end
 
-    def dump output
+    def dump
+      output = ""
       output << divider
       @lines.each_with_index do |line, index|
         output << divider if index == 1
