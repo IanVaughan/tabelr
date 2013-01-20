@@ -1,0 +1,34 @@
+
+Allow STDIN/OUT to be used, how? Logger does out!
+
+
+# file = File.open('result.json', 'r')
+# result = JSON.parse(file.readlines.to_s)
+# puts result
+
+      json = JSON.parse(File.read(args[0]))
+      output = File.open(args[1], 'w')
+
+
+
+if __FILE__ == $0
+
+
+
+  def test_output
+#     output = <<END
+# +---------+----------------------+---------+------------------+
+# | column1 | column2              | column3 | column4          |
+# +---------+----------------------+---------+------------------+
+# | This    | is                   | quite   | cool!            |
+# | This    | is the longest field | by far  | 1241             |
+# | Short   | fields               | fit     | in               |
+# | other   | eg                   |         | 3322119999999999 |
+# +---------+----------------------+---------+------------------+
+# END
+
+#     ARGV[0] = 'test/example.json'
+#     Tabelr.run > 'test.run'
+#     assert_equal output, File.read('test.run')
+#   end
+
